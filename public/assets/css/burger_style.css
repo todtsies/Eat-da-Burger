@@ -7,7 +7,7 @@
 }
 /* Use Righteous font from Google fonts*/
 body {
-    font-family: 'Righteous', cursive;
+    font-family: 'Cinzel', serif;
 }
 /* Font size of app title in jumbotron*/
 #app-title {
@@ -19,10 +19,7 @@ body {
 }
 /* Burger background image*/
 body {
-    background-image: url("/assets/img/burger.jpg");
-    /*Photo by Gianna Ciaramello on Unsplash*/
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: lightblue;
 }
 /* Footer color */
 .footer-body {
