@@ -1,13 +1,13 @@
 <div class="container">
   <!--Jumbotron-->
   <div class="jumbotron text-center bg-success text-white">
-    <h1 class="display-4" id="app-title">Eat-da-Burger<img src="/assets/img/cheeseburger.png"></h1>
+    <h1 class="display-4 ml-3" id="app-title">Eat-da-Burger <img src="/assets/img/cheeseburger.png" class="mb-2"></h1>
     <p class="lead">Are you ready to eat?!</p>
   </div>
   <div class="row">
     <div class="col-md-12">
-      <div class="card border border-success">
-        <div class="card-header bg-success text-white">
+      <div class="card border border-primary">
+        <div class="card-header bg-primary text-white">
          Can I take your order?
         </div>
         <!--Create/add burger form-->
@@ -17,47 +17,42 @@
               <label for="burger">Place order here:</label>
               <input type="text" class="form-control" id="burgerToGo" placeholder="">
             </div>
-            <button class="btn btn-success" type="submit">Place order</button>
+            <button class="btn btn-primary" type="submit">Place order</button>
           </form>
         </div>
       </div>
     </div>
   </div>
   <div class="row mt-4">
-    <div class="col-md-6 mt-4">
-      <div class="card border border-success">
-        <div class="card-header bg-success text-white">
+    <div class="col-md-6 mt-2">
+      <div class="card border border-warning">
+        <div class="card-header bg-warning text-white">
          BURGERS
         </div>
         <!--Div to hold burgers that have not been devoured yet-->
-        <div class="card-body">
+        <div class="card-body mb-4">
               {{#each burgers}}
                 {{#unless devoured}}
-                  {{> burgers/burger-block devour=false}}
+                  {{> burger-block devoured=false}}
                 {{/unless}}
               {{/each}}
         </div>
       </div>
     </div>
-    <div class="col-md-6 mt-4">
+    <div class="col-md-6 mt-2">
       <div class="card devoured-card">
         <div class="card-header text-white" id="devoured-card-header">
          DEVOURED
         </div>
         <!--When a burger has been devoured, put burger here-->
-        <div class="card-body">
+        <div class="card-body mb-4">
           {{#each burgers}}
               {{#if devoured}}
-                {{> burgers/burger-devoured devour=true}}
+                {{> burger-devoured devoured=true}}
               {{/if}}
           {{/each}}
         </div>
       </div>
     </div>
   </div>
-  <!--Footer-->
-  <div class="row mt-5">
-    <div class="col-md-12">
-      
-    </div>
-</div>
+  
