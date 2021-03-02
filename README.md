@@ -19,7 +19,7 @@
   ## Demo
   ![Application Preview](assets/Demo.gif)
   
-  To view the full application, please direct yourself to the following link: 
+  To view the full application, please direct yourself to the following link: https://damp-oasis-62499.herokuapp.com/
   
   ## Installation
   Eat-da-Burger requires the installation of Express, MySQL, and Handlebars from npm to run properly in a local dev environment. To install the project's npm dependencies, navigate to the project's root directory and run:
